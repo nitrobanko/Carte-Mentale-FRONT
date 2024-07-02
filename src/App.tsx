@@ -17,6 +17,7 @@ import GestionParticipant from './pages/GestionParticipants';
 import DetailParticipant from './pages/DetailParticipant';
 import ListeMembreEnAttente from './pages/ListeMembreEnAttente';
 import Organisme from "./pages/Organisme";
+import GestionDesEvenements from "./pages/GestionDesEvements";
 
 function Copyright() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Route path="/" element={<SignInSide/>} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="gestion-event" element={<ListEvent/>} />
+      <Route path="event" element={<GestionDesEvenements/>} />
       <Route path="list-event" element={<GestionEvenement/>} />
       <Route path="participants" element={<ListParticip/>} />
       <Route path="validation" element={<GestionParticipant/>} />
