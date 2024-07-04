@@ -30,7 +30,6 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
-
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
@@ -145,6 +144,32 @@ const PageEvent: React.FC = () => {
                     275 characters left
                   </FormHelperText>
                 </Stack>
+                <FormControl>
+                  <Select size="sm" defaultValue="Préscripteur">
+                     <Option value="Financeurs">Financeur</Option>
+                     <Option value="Préscripteur">Préscripteur</Option>
+                     <Option value="Admin">Administrateur</Option>
+                   </Select>    
+                </FormControl>
+                <FormControl>
+                  <Select size="sm" defaultValue="Thème">
+                     <Option value="Thème">Thème</Option>
+                     <Option value="sous Thème">sous Thème</Option>
+                   </Select>    
+                </FormControl>
+                <FormControl>
+                  <Select size="sm" defaultValue="Projet">
+                     <Option value="Projet">Projet</Option>
+                     <Option value="Ateliers">Ateliers</Option>
+                     <Option value="Conférence">Conférence</Option>
+                     <Option value="Forum">Forum</Option>
+                     <Option value="Formation">Formation</Option>
+                     <Option value="Meet-up">Meet-up</Option>
+                     <Option value="Porte Ouverte">Porte Ouverte</Option>
+                     <Option value="Webinaire">Webinaire</Option>
+                     <Option value="Club">Club</Option>
+                   </Select>    
+                </FormControl>
                 <CardOverflow sx={{ borderTop: '1px solid', borderColor: 'divider' }}>
                   <CardActions sx={{ alignSelf: 'flex-end', pt: 2 }}>
                     <Button size="sm" variant="outlined" color="neutral" onClick={handleCancel}>
@@ -201,8 +226,62 @@ const PageEvent: React.FC = () => {
                 </CardContent>
               </Card>
               <Card sx={{ boxShadow: 3, mb: 2 }}>
+          <Box sx={{ mb: 1 }}>
+            <Typography level="title-md">Adresse de l'événement</Typography>
+            <Typography level="body-sm">
+              Ajoutez l'adresse de l'événement
+            </Typography>
+          </Box>
+          <Divider />
+          <FormControl
+                  sx={{
+                    display: {
+                      sm: 'flex-column',
+                      md: 'flex-row',
+                    },
+                    gap: 2,
+                  }}
+                >
+                  <Input size="sm" placeholder="Adresse" />
+                </FormControl> <FormControl
+                  sx={{
+                    display: {
+                      sm: 'flex-column',
+                      md: 'flex-row',
+                    },
+                    gap: 2,
+                  }}
+                >
+                  <Input size="sm" placeholder="Ville" />
+                </FormControl>
+          <Stack spacing={2} sx={{ my: 1 }}> <FormControl
+                  sx={{
+                    display: {
+                      sm: 'flex-column',
+                      md: 'flex-row',
+                    },
+                    gap: 2,
+                  }}
+                >
+                  <Input size="sm" placeholder="Code postal" />
+                </FormControl>
+          </Stack>
+          <CardOverflow sx={{ borderTop: '1px solid', borderColor: 'divider' }}>
+            <CardActions sx={{ alignSelf: 'flex-end', pt: 2 }}>
+              <Button size="sm" variant="outlined" color="neutral">
+                Cancel
+              </Button>
+              <Button size="sm" variant="solid">
+                Save
+              </Button>
+            </CardActions>
+          </CardOverflow>
+        </Card>
+              <Card sx={{ boxShadow: 3, mb: 2 }}>
                 <CardContent>
                   <Typography >Inscription</Typography>
+                  <Input size="sm" placeholder="Lien/URL d'inscription" />
+                  <Input size="sm" placeholder="Lien/URL d'inscription(virtuel)" />
                   <motion.div whileTap={cardAnimation}>
                     <Button
                       variant="solid"
