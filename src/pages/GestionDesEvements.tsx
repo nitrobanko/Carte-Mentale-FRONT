@@ -212,7 +212,7 @@ const PageEvent: React.FC = () => {
               </Card>
               <Card sx={{ boxShadow: 3 }}>
                 <CardContent>
-                  <Typography >Tranche d'âge et Statut professionnel</Typography>
+                  <Typography>Tranches d'age </Typography>
                   <Typography >Âge: {eventDetails.ageGroup}</Typography>
                   <Typography >Statut: {eventDetails.professionalStatus}</Typography>
                 </CardContent>
