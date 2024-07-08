@@ -206,17 +206,16 @@ const PageEvent: React.FC = () => {
             <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
               <Card sx={{ boxShadow: 3 }}>
                 <CardContent>
-                  <Typography >Date & Heure</Typography>
-                  <Typography >{eventDetails.date} à {eventDetails.time}</Typography>
-                  <Typography >Durée: {eventDetails.duration}</Typography>
-                  <Typography >Participants max: {eventDetails.maxParticipants}</Typography>
-                </CardContent>
-              </Card>
-              <Card sx={{ boxShadow: 3 }}>
-                <CardContent>
-                  <Typography>Tranches d'age </Typography>
-                  <Typography >Âge: {eventDetails.ageGroup}</Typography>
-                  <Typography >Statut: {eventDetails.professionalStatus}</Typography>
+                <Typography level="title-md">Période de l'événement</Typography>
+                  <label htmlFor="start"> Date de début : </label>
+                  <input type="date" id="start" name="trip-start" value="2024-07-22" min="2024-01-01" max="2026-12-31" />
+                  <label htmlFor="end"> Date de fin : </label>
+                  <input type="date" id="end" name="trip-end" value="2024-07-23" min="2024-01-01" max="2026-12-31" />
+                  <label htmlFor="time">Heure & Durée </label>
+                  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required /> <small>Heures d'ouverture entre 9h et 18h</small>
+                  <label htmlFor="participants">Nombres de participants (10-100):</label>  <input type="number" id="participants" name="participants" min="10" max="100" />
+                  <p> Age cible : </p>
+                  <input type="range" id="age" name="age cible" min="8" max="17" />
                 </CardContent>
               </Card>
               <Card sx={{ boxShadow: 3 }}>
