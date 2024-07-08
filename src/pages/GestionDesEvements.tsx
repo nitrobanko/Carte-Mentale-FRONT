@@ -37,6 +37,7 @@ import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRou
 import VideocamRoundedIcon from '@mui/icons-material/VideocamRounded';
 import InsertDriveFileRoundedIcon from '@mui/icons-material/InsertDriveFileRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import DropZone from '../components/DropZone';
 
 const PageEvent: React.FC = () => {
   const eventDetails = {
@@ -170,6 +171,7 @@ const PageEvent: React.FC = () => {
                      <Option value="Club">Club</Option>
                    </Select>    
                 </FormControl>
+                <DropZone />
                 <CardOverflow sx={{ borderTop: '1px solid', borderColor: 'divider' }}>
                   <CardActions sx={{ alignSelf: 'flex-end', pt: 2 }}>
                     <Button size="sm" variant="outlined" color="neutral" onClick={handleCancel}>
@@ -296,26 +298,6 @@ const PageEvent: React.FC = () => {
               </Card>
             </Box>
           </Box>
-        </Box>
-        <Box sx={{ width: '100%', maxWidth: 1200, bgcolor: '#fff', boxShadow: 3, borderRadius: 3, p: 4, mt: 4, display: 'flex', gap: 4 }}>
-          <Card sx={{ flex: 1, boxShadow: 3 }}>
-            <CardContent>
-              <Typography >Projet</Typography>
-              <Typography >Détails sur le projet en cours...</Typography>
-            </CardContent>
-          </Card>
-          <Card sx={{ flex: 1, boxShadow: 3 }}>
-            <CardContent>
-              <Typography >Prescripteurs</Typography>
-              <Grid container spacing={2}>
-                {prescripteurs.map((prescripteur, index) => (
-                  <Grid item xs={4} key={index}>
-                    <Avatar alt={prescripteur.name} src={prescripteur.avatarUrl} variant="square" sx={{ width: 70, height: 70, borderRadius: '8px', mt: 1, boxShadow: 3 }} />
-                  </Grid>
-                ))}
-              </Grid>
-            </CardContent>
-          </Card>
         </Box>
         <ToastContainer />
       </Box>
