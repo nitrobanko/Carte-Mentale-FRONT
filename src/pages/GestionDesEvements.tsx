@@ -155,12 +155,52 @@ const PageEvent: React.FC = () => {
                 <FormControl>
                   <Select size="sm" defaultValue="Thème">
                      <Option value="Thème">Thème</Option>
-                     <Option value="sous Thème">sous Thème</Option>
+                     <Option value="Agriculture et élevage">Agriculture et élevage</Option>
+                     <Option value="Architecture">Architecture</Option>
+                     <Option value="Artisanat d'art">Artisanat d'art</Option>
+                     <Option value="Arts du spectacle">Arts du spectacle</Option>
+                     <Option value="Audiovisuel et journalisme">Audiovisuel et journalisme</Option>
+                     <Option value="Audit - Conseil">Audit - Conseil</Option>
+                     <Option value="Automobile">Automobile</Option>
+                     <Option value="Bien-être">Bien-être</Option>
+                     <Option value="Bâtiment et travaux publics (BTP)">Bâtiment et travaux publics (BTP)</Option>
+                     <Option value="Commerce et distribution">Commerce et distribution</Option>
+                     <Option value="Comptabilité, gestion, ressources humaines">Comptabilité, gestion, ressources humaines</Option>
+                     <Option value="Construction aéronautique, ferroviaire et navale">Construction aéronautique, ferroviaire et navale</Option>
+                     <Option value="Culture - Patrimoine">Culture - Patrimoine</Option>
+                     <Option value="Droit et justice">Droit et justice</Option>
+                     <Option value="Défense">Défense</Option>
+                     <Option value="Edition, librairie, bibliothèque">Edition, librairie, bibliothèque</Option>
+                     <Option value="Electronique">Electronique</Option>
+                     <Option value="Energie et étude des sols">Energie et étude des sols</Option>
+                     <Option value="Enseignement et formation">Enseignement et formation</Option>
+                     <Option value="Environnement">Environnement</Option>
+                     <Option value="Filière bois">Filière bois</Option>
+                     <Option value="Finance, banque et assurances">Finance, banque et assurances</Option>
+                     <Option value="Fonction publique">Fonction publique</Option>
+                     <Option value="Hôtellerie - Restauration">Hôtellerie - Restauration</Option>
+                     <Option value="Industrie">Industrie</Option>
+                     <Option value="Industrie alimentaire">Industrie alimentaire</Option>
+                     <Option value="Industrie chimique">Industrie chimique</Option>
+                     <Option value="Informatique et télécoms">Informatique et télécoms</Option>
+                     <Option value="Internet - Ecommerce">Internet - Ecommerce</Option>
+                     <Option value="Logistique et transport">Logistique et transport</Option>
+                     <Option value="Maintenance et entretien">Maintenance et entretien</Option>
+                     <Option value="Marketing, publicité">Marketing, publicité</Option>
+                     <Option value="Mode et textile">Mode et textile</Option>
+                     <Option value="Mécanique">Mécanique</Option>
+                     <Option value="Recherche">Recherche</Option>
+                     <Option value="Santé">Santé</Option>
+                     <Option value="Services à la personne ou à la collectivité">Services à la personne ou à la collectivité</Option>
+                     <Option value="Social">Social</Option>
+                     <Option value="Sport">Sport</Option>
+                     <Option value="Sécurité">Sécurité</Option>
+                     <Option value="Tourisme">Tourisme</Option>
                    </Select>    
                 </FormControl>
                 <FormControl>
-                  <Select size="sm" defaultValue="Projet">
-                     <Option value="Projet">Projet</Option>
+                  <Select size="sm" defaultValue="Type de Projet">
+                     <Option value="Type de Projet">Type de Projet</Option>
                      <Option value="Ateliers">Ateliers</Option>
                      <Option value="Conférence">Conférence</Option>
                      <Option value="Forum">Forum</Option>
